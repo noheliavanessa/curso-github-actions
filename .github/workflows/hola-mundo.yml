@@ -19,4 +19,4 @@ jobs:
           node-version: '18' # Puedes usar la versión que prefieras
 
       - name: Correr script
-        run: node hola_mundo.js
+        run: node script/hola_mundo.js
