@@ -1,12 +1,17 @@
+# El nombre del flujo de trabajo. 
 name: Aprendiendo GitHub Actions
+# El nombre de las ejecuciones de flujo de trabajo generadas a partir del flujo de trabajo. 
 run-name: ¡Estoy aprendiendo GitHub Actions!
+# Define qué eventos pueden hacer que se ejecute el flujo de trabajo.
 on: [push]
 jobs:
+# trabajos que se ejecutan en paralelo de forma predeterminada. 
   hola-mundo:
+  # definir el tipo de máquina en la que se ejecutará el trabajo.
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Definir variable
         run: echo "USERNAME=${{ github.actor }}" >> $GITHUB_ENV
       - name: Correr script
