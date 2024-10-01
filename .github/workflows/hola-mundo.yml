@@ -16,7 +16,7 @@ jobs:
       - name: Configurar Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '18' # Puedes usar la versión que prefieras
+          node-version: '18'
 
       - name: Correr script
-        run: node script/hola_mundo.js
+        run: node hola_mundo.js
