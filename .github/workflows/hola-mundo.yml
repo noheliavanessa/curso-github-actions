@@ -22,4 +22,4 @@ jobs:
       #   run: ls -la
 
       - name: Correr script
-        run: node hola_mundo.js
+        run: node .github/script/hola_mundo.js
