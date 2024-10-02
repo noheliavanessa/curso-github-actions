@@ -1,6 +1,9 @@
-name: Aprendiendo GitHub Actions
-run-name: ¡Estoy aprendiendo GitHub Actions!
-on: [push]
+# El nombre del flujo de trabajo. 
+name: Aprendiendo GitHub Actions 
+# El nombre de las ejecuciones de flujo de trabajo generadas a partir del flujo de trabajo.
+run-name: ¡Estoy aprendiendo GitHub Actions! 
+#definir qué eventos pueden hacer que se ejecute el flujo de trabajo.
+on: [push] 
 
 jobs:
   hola-mundo:
