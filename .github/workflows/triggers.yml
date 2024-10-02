@@ -58,4 +58,4 @@ jobs:
         with:
           node-version: '18'
       - name: Correr script
-        run: node .github/script/hola_lenguaje.js
+        run: node .github/script/hola_mundo.js
