@@ -8,21 +8,14 @@ on: [push]
 jobs:
   hola-mundo:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-       
       - name: Definir variable
         run: echo "USERNAME=${{ github.actor }}" >> $GITHUB_ENV
-
       - name: Configurar Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '18'
-
-      # - name: Verificar archivos
-      #   run: ls -la
-
       - name: Correr script
         run: node .github/script/hola_mundo.js
